@@ -83,8 +83,8 @@ The Prestashop demo website must deliver a seamless, functional, secure, and eff
 
 ### **5\. Additional Requirements**
 
-#### 6.1. Accessibility: The platform must adhere to WCAG 2.1 guidelines for accessibility, ensuring usability for all users, including those with disabilities.  
-#### 6.2. Language Support: The website must support at least two languages (e.g., English and French) with a toggle feature for users.  
-#### 6.3. Logging: Key user actions (e.g., login, checkout, and wishlist updates) must be logged for auditing and troubleshooting purposes.  
-#### 6.4. Support for Scalability: The platform should be easily scalable to handle increased traffic and users.
+* Accessibility: The platform must adhere to WCAG 2.1 guidelines for accessibility, ensuring usability for all users, including those with disabilities.  
+* Language Support: The website must support at least two languages (e.g., English and French) with a toggle feature for users.  
+* Logging: Key user actions (e.g., login, checkout, and wishlist updates) must be logged for auditing and troubleshooting purposes.  
+* Support for Scalability: The platform should be easily scalable to handle increased traffic and users.
 
