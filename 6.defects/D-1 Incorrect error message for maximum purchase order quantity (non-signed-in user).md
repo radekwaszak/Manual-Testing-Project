@@ -27,9 +27,14 @@ DevTools Information:
 * **Console Output:** No JavaScript errors were observed related to this message.  
 * **Network Response**: No server-side API errors returned.  
 * **DOM Structure:**
-
-| \<article class="alert alert-danger" role="alert" data-alert="danger"\>    \<ul\>        \<li\>The available purchase order quantity for this product is 300\.\</li\>    \</ul\>\</article\> |
-| :---- |
+  
+```
+<article class="alert alert-danger" role="alert" data-alert="danger">
+    <ul>
+        <li>The available purchase order quantity for this product is 300.</li>
+    </ul>
+</article>
+```
 
 **Suggested Fix:** Update the error message to be compliant with the requirements.
 
