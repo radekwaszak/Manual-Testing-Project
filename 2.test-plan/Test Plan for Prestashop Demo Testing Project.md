@@ -156,7 +156,7 @@ This test plan is intended for the following stakeholders:
 3. **Test Manager**  
 * Oversee test planning, execution, and reporting
 
-**13\. Test Environment**
+### **13\. Test Environment**
 
 1. **Functional and Usability Testing**:  
    * Tools: Newest versions of Google Chrome and Microsoft Edge, DevTools, JAM for test recordings, Qase for reporting test results, defects.  
@@ -178,7 +178,7 @@ This test plan is intended for the following stakeholders:
 * Performance Testing: Assess key metrics (e.g., page load time, TTI, JavaScript execution).  
 * Security Testing: Perform SQL injection, XSS, and password security assessments without backend access.
 
-**15\. Testing Tools**  
+### **15\. Testing Tools**  
  
 
 | Area | Tool |
