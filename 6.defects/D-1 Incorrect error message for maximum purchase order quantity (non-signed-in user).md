@@ -6,7 +6,7 @@
 | Reporter | Radosław W. |
 | Submit Date | 09/11/2024 |
 | Summary | When attempting to change the product quantity in the cart to 401, an error message appears. The message content is correct, but it does not follow the required phrasing as specified in the requirements. |
-| Environment | Browser: Chrome 131.0.6778.70  (64-bit) Platform: Windows 10 PrestaShop Version: Demo version ([https://demo.prestashop.com/\#/en/front](https://demo.prestashop.com/#/en/front))  |
+| Environment | Browser: Chrome 131.0.6778.70 (64-bit), OS: Windows 10, Device: Desktop, Network: High-speed broadband connection, PrestaShop Version: Demo([https://demo.prestashop.com/\#/en/front](https://demo.prestashop.com/#/en/front))  |
 | Severity | **Normal** |
 | Assigned to | / |
 | Priority | **Medium** |
