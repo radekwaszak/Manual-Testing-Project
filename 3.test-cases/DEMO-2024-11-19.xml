@@ -1,0 +1,4588 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<nodes>
+<cases>
+</cases>
+<suites>
+<node>
+<id>
+4
+</id>
+<title>
+Registration / Sing-in functional tests
+</title>
+<description>
+
+</description>
+<preconditions>
+
+</preconditions>
+<suites>
+</suites>
+<cases>
+<node>
+<id>
+11
+</id>
+<title>
+Verify successful registration with valid data
+</title>
+<description>
+Validate that a user can successfully register with valid details.
+</description>
+<preconditions>
+User is on the registration page; registration form is visible.
+</preconditions>
+<postconditions>
+A new account is created and the user is redirected to the dashboard, signed-in.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+critical
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Select the appropriate social title radiobutton - Mr. or Mrs.
+</action>
+<expected_result>
+The appropriate radiobutton is selected.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Enter a valid first name, last name, and email.
+</action>
+<expected_result>
+Text fields populate with the entered information.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Enter a strong, valid password.
+</action>
+<expected_result>
+Password is accepted and hidden behind asterisks or similar masking.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Complete the optional field - birthdate.
+</action>
+<expected_result>
+Text fields populate with the entered information.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+5
+</position>
+<action>
+Accept terms and conditions.
+</action>
+<expected_result>
+Checkbox is selected.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+6
+</position>
+<action>
+Accept customer data privacy.
+</action>
+<expected_result>
+Checkbox is selected.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+7
+</position>
+<action>
+Click the &quot;Save&quot; button.
+</action>
+<expected_result>
+User is successfully registered and redirected to the dashboard, signed-in.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+12
+</id>
+<title>
+Verify registration fails with invalid email format
+</title>
+<description>
+Validate that the system rejects registration attempts with an invalid email format.
+</description>
+<preconditions>
+User is on the registration page.
+</preconditions>
+<postconditions>
+No account is created; the user remains on the registration page with an error message.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+critical
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Select the appropriate social title radiobutton - Mr. or Mrs.
+</action>
+<expected_result>
+The appropriate radiobutton is selected.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Enter a valid first name and last name.
+</action>
+<expected_result>
+Text fields populate with the entered information.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Enter an invalid email format (e.g., &quot;user@domain&quot;).
+</action>
+<expected_result>
+Email field accepts input, but format does not meet validation criteria.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Enter a strong, valid password.
+</action>
+<expected_result>
+Password is accepted and hidden behind asterisks or similar masking.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+5
+</position>
+<action>
+Accept terms and conditions.
+</action>
+<expected_result>
+Checkbox is selected.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+6
+</position>
+<action>
+Accept customer data privacy.
+</action>
+<expected_result>
+Checkbox is selected.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+7
+</position>
+<action>
+Click the &quot;Save&quot; button.
+</action>
+<expected_result>
+Registration fails; an error message indicating &quot;Invalid email format&quot; is displayed.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+13
+</id>
+<title>
+Verify registration fails with unchecked mandatory checkbox
+</title>
+<description>
+Validate that the system rejects registration attempts with the “Customer Data Privacy” checkbox not checked.
+</description>
+<preconditions>
+User is on the registration page.
+</preconditions>
+<postconditions>
+No account is created; the user remains on the registration page with an information message “Check this box if you want to continue” displayed.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+critical
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Select the appropriate social title radiobutton - Mr. or Mrs.
+</action>
+<expected_result>
+The appropriate radiobutton is selected.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Enter a valid first name, last name, and email.
+</action>
+<expected_result>
+Text fields populate with the entered information.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Enter a strong, valid password.
+</action>
+<expected_result>
+Password is accepted and hidden behind asterisks or similar masking.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Accept terms and conditions.
+</action>
+<expected_result>
+Checkbox is selected.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+5
+</position>
+<action>
+Click the &quot;Save&quot; button.
+</action>
+<expected_result>
+Registration fails; an information message indicating “Check this box if you want to continue” is displayed.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+14
+</id>
+<title>
+Successful login with valid credentials
+</title>
+<description>
+Verify that a user can successfully sign in with valid credentials.
+</description>
+<preconditions>
+User has a registered account; login page is accessible.
+</preconditions>
+<postconditions>
+User is signed-in and directed to the dashboard.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+critical
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Enter valid email and password.
+</action>
+<expected_result>
+Credentials are entered correctly and match stored user data.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Click the &quot;Sign In&quot; button.
+</action>
+<expected_result>
+Login is successful; user is redirected to the dashboard.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+15
+</id>
+<title>
+Verify login fails with incorrect password
+</title>
+<description>
+Ensure login fails when an incorrect password is entered.
+</description>
+<preconditions>
+User has a registered account; login page is accessible.
+</preconditions>
+<postconditions>
+User remains on the login page with an error message indicating incorrect credentials.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+critical
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Enter a valid email but an incorrect password.
+</action>
+<expected_result>
+Incorrect password is accepted into the password field.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Click the &quot;Sign In&quot; button.
+</action>
+<expected_result>
+Login fails; an error message stating &quot;Authentication failed&quot; appears.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+</cases>
+</node>
+<node>
+<id>
+5
+</id>
+<title>
+Non-signed-in user functional tests
+</title>
+<description>
+
+</description>
+<preconditions>
+
+</preconditions>
+<suites>
+</suites>
+<cases>
+<node>
+<id>
+16
+</id>
+<title>
+Verify search functionality with valid product name (non-signed-in user)
+</title>
+<description>
+Confirm that searching with a valid product name returns relevant results for non-signed-in user.
+</description>
+<preconditions>
+User is not signed-in. Products are available in the system; search bar is accessible.
+</preconditions>
+<postconditions>
+Search results page displays products matching the search term.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+major
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Enter a specific product name (e.g., &quot;T-shirt&quot;) into the search bar.
+</action>
+<expected_result>
+Product name is accepted and visible in the search bar.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Click &#039;Enter&#039;.
+</action>
+<expected_result>
+Relevant search results matching the product name are displayed.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+17
+</id>
+<title>
+Verify adding a single product to the cart (non-signed-in user)
+</title>
+<description>
+Validate that a non-signed-in user can add a single item to the shopping cart.
+</description>
+<preconditions>
+User is not signed-in and has navigated to the random product page.
+</preconditions>
+<postconditions>
+Product is added to the cart, and cart count updates accordingly.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+major
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Search for the product and navigate to its product page.
+</action>
+<expected_result>
+Product page for the selected book is displayed.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Click the &quot;Add to Cart&quot; button.
+</action>
+<expected_result>
+Product is added to the cart; cart icon updates to reflect the added item.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+18
+</id>
+<title>
+Verify adding products to the cart in different variants and quantities (non-signed-in user)
+</title>
+<description>
+Validate that a non-signed-in user can add different products to the cart after changing their details such as size, color, quantity.
+</description>
+<preconditions>
+User is not signed-in and has navigated to the random product page.
+</preconditions>
+<postconditions>
+Products are added to the cart in the appropriate variants that the user has selected.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+critical
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Search for the product and navigate to its product page.
+</action>
+<expected_result>
+Product page for the selected item is displayed.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Change product size, color and quantity (for example to 15).
+</action>
+<expected_result>
+Product details changed accordingly.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Click the &quot;Add to Cart&quot; button.
+</action>
+<expected_result>
+Product is added to the cart; cart icon updates to reflect the added item.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Search for another product and navigate to it&#039;s page.
+</action>
+<expected_result>
+Product page for the selected item is displayed.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+5
+</position>
+<action>
+Change product size, color and quantity (for example to 15).
+</action>
+<expected_result>
+Product details changed accordingly.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+6
+</position>
+<action>
+Click the &quot;Add to Cart&quot; button.
+</action>
+<expected_result>
+Product is added to the cart; cart icon updates to reflect the added item.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+19
+</id>
+<title>
+Verify product quantity change from the cart level (non-signed-in user)
+</title>
+<description>
+Validate that a non-signed-in user can change product quantity in the “Shopping Cart” page.
+</description>
+<preconditions>
+User is not signed-in and has navigated to the “Shopping Cart” page. There is a clothing product in the cart, e.g. a T-shirt.
+</preconditions>
+<postconditions>
+The product with the changed quantity is in the cart.
+</postconditions>
+<priority>
+medium
+</priority>
+<severity>
+normal
+</severity>
+<type>
+other
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Change the number of products in the cart, e.g. to 20.
+</action>
+<expected_result>
+Product number changed to 20, price recalculated according to the new quantity.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Change the number of products in the cart to 401.
+</action>
+<expected_result>
+An error message appears “The available purchase order quantity for this product is 400&quot;.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+20
+</id>
+<title>
+Verify product size change from the cart level (non-signed-in user)
+</title>
+<description>
+Validate that a non-signed-in user can change product size in the “Shopping Cart” page.
+</description>
+<preconditions>
+User is not signed-in and has navigated to the “Shopping Cart” page. There is a clothing product in the cart, e.g. a T-shirt.
+</preconditions>
+<postconditions>
+The product with the changed size is in the cart
+</postconditions>
+<priority>
+medium
+</priority>
+<severity>
+normal
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Change the product size, using drop-down list for the product.
+</action>
+<expected_result>
+Product size has changed.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+21
+</id>
+<title>
+Verify adding a product to wishlist (non-signed-in user)
+</title>
+<description>
+Verify that a non-signed-in user can add products to the wishlist.
+</description>
+<preconditions>
+User is not signed-in; they are on the product page of an item they want to add to the wishlist.
+</preconditions>
+<postconditions>
+Product is added to the temporary wishlist. The wishlist is cleared later after 24 hours.
+</postconditions>
+<priority>
+medium
+</priority>
+<severity>
+normal
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Navigate to a product page (e.g., &quot;T-shirt&quot;) without signing in.
+</action>
+<expected_result>
+Product page is displayed with all product information and options, including the &quot;Add to Wishlist&quot; heart-shaped button.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Click the &quot;Add to Wishlist&quot; button.
+</action>
+<expected_result>
+The product is added to a temporary wishlist that will be cleared after 24 hours.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+22
+</id>
+<title>
+Verify removing a product from wishlist (non-signed-in user)
+</title>
+<description>
+Verify that a non-signed-in user can remove products from the wishlist.
+</description>
+<preconditions>
+User is not signed-in; they are on the temporary wishlist page with the product added to this list.
+</preconditions>
+<postconditions>
+Product is removed from the temporary wishlist.
+</postconditions>
+<priority>
+medium
+</priority>
+<severity>
+normal
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Click on the button in the shape of trash can in the product preview image.
+</action>
+<expected_result>
+A window appears to confirm the execution of the action &quot;The product will be removed from wishlist&quot;.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Click “Remove”.
+</action>
+<expected_result>
+A green toast message &quot;Product successfully removed&quot; appears on the screen.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+23
+</id>
+<title>
+Verify filter by singe criteria (non-signed-in user)
+</title>
+<description>
+Verify that applying single filter displays only products that belong to the selected criteria for non-signed-in user.
+</description>
+<preconditions>
+User is not signed-in. Multiple products are available across different categories, and the user is on the product search or category page.
+</preconditions>
+<postconditions>
+The page should display only products in the selected criteria or reset to the default product view if filters are cleared.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+normal
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Select “Clothes” category and then apply a specific filter (e.g., &quot;Men&quot;).
+</action>
+<expected_result>
+The filter is selected, and the page shows a loading spinner or indicator that the filter is being applied. The page automatically reloads and shows clothes only from the “Men” category.  No products from other categories are shown.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+24
+</id>
+<title>
+Verify filter by multiple criteria (non-signed-in user)
+</title>
+<description>
+Validate that applying multiple filters together narrows down the product search results to meet all selected criteria for non-signed-in user.
+</description>
+<preconditions>
+User is not signed-in. Products are available across different categories and price ranges.
+</preconditions>
+<postconditions>
+The page should display only products that match the applied criteria or reset to the default product view if filters are cleared.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+normal
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Select “Accessories” category and then apply a specific filter (e.g., Composition “Polyester”).
+</action>
+<expected_result>
+The filter is selected, and the page shows a loading spinner or indicator that the filter is being applied. The page automatically reloads and shows Polyester accessories.  No accessories of other composition are shown.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Apply an additional filer e.g., Composition “Recycled cardboard”.
+</action>
+<expected_result>
+The page shows a loading spinner or indicator that the filter is being applied. The page automatically reloads and shows accessories made of polyester and recycled cardboard. No accessories of other composition are shown.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+25
+</id>
+<title>
+Verify checkout process with valid data (non-signed-in user)
+</title>
+<description>
+Ensure that the checkout process for non-signed-in user completes successfully with valid user details and payment information.
+</description>
+<preconditions>
+User is not signed-in with items in their cart.
+</preconditions>
+<postconditions>
+Order is successfully placed, and an order confirmation page is displayed.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+critical
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Navigate to the cart and click &quot;Proceed to Checkout.&quot;
+</action>
+<expected_result>
+User is taken to the checkout page with a summary of items.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Enter valid personal information – first name, last name, email. Check mandatory checkboxes – Terms and Conditions agreement and Data Privacy. Click “continue”.
+</action>
+<expected_result>
+The personal information section closes - an icon with a green tick appears next to it, indicating that the section has been completed correctly. The &quot;addresses&quot; section opens with first and last name fields filled automatically.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Enter valid address information – address, Zip/Postal Code, City and Country. The remaining fields are optional - they may or may not be filled. Click “continue”.
+</action>
+<expected_result>
+The address information section closes - an icon with a green tick appears next to it, indicating that the section has been completed correctly. The &quot;Shipping Method&quot; section opens. Only “My Carrier” option is available. Radiobutton next to it is automatically selected.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Click “Continue”.
+</action>
+<expected_result>
+The “Shipping Method” section closes - an icon with a green tick appears next to it, indicating that the section has been completed correctly. The &quot;Payment&quot; section opens with fillable fields for entering debit/credit card details.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+5
+</position>
+<action>
+Provide information about card details - number, security code and card expiration date. Accept Terms &amp; Conditions and click “Place Order”.
+</action>
+<expected_result>
+Order is successfully placed; confirmation page with order details appears.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+26
+</id>
+<title>
+Verify checkout fails with invalid credit card information (non-signed-in user)
+</title>
+<description>
+Confirm that the checkout process for non-signed-in user fails when invalid credit card information is entered.
+</description>
+<preconditions>
+User is not signed-in with items in the cart; checkout page is accessible.
+</preconditions>
+<postconditions>
+Order is not placed; error message indicates invalid payment details.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+critical
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Navigate to the cart and click &quot;Proceed to Checkout.&quot;
+</action>
+<expected_result>
+User is taken to the checkout page with a summary of items.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Enter valid personal information – first name, last name, email. Check mandatory checkboxes – Terms and Conditions agreement and Data Privacy. Click “Continue”.
+</action>
+<expected_result>
+The personal information section closes - an icon with a green tick appears next to it, indicating that the section has been completed correctly. The &quot;addresses&quot; section opens with first and last name fields filled automatically.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Enter valid address information – address, Zip/Postal Code, City and Country. The remaining fields are optional - they may or may not be filled.
+</action>
+<expected_result>
+The address information section closes - an icon with a green tick appears next to it, indicating that the section has been completed correctly. The &quot;Shipping Method&quot; section opens. Only “My Carrier” option is available. Radiobutton next to it is automatically selected.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Click “Continue”.
+</action>
+<expected_result>
+The “Shipping Method” section closes - an icon with a green tick appears next to it, indicating that the section has been completed correctly. The &quot;Payment&quot; section opens with fillable fields for entering debit/credit card details.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+5
+</position>
+<action>
+Provide incorrect card details - e.g. the card number should be in the wrong format - instead of 12 characters, make it 9. Accept Terms &amp; Conditions and click “Place Order”.
+</action>
+<expected_result>
+Order is not placed; error message indicates invalid payment details.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+</cases>
+</node>
+<node>
+<id>
+6
+</id>
+<title>
+Signed-in user functional tests
+</title>
+<description>
+
+</description>
+<preconditions>
+
+</preconditions>
+<suites>
+</suites>
+<cases>
+<node>
+<id>
+27
+</id>
+<title>
+Verify search functionality with valid product name (signed-in user)
+</title>
+<description>
+Confirm that searching with a valid product name returns relevant results for signed-in user.
+</description>
+<preconditions>
+User is signed-in. Products are available in the system; search bar is accessible.
+</preconditions>
+<postconditions>
+Search results page displays products matching the search term.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+major
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Enter a specific product name (e.g., &quot;T-shirt&quot;) into the search bar.
+</action>
+<expected_result>
+Product name is accepted and visible in the search bar.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Click “Enter”.
+</action>
+<expected_result>
+Relevant search results matching the product name are displayed.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+28
+</id>
+<title>
+Verify adding a single product to the cart (signed-in user)
+</title>
+<description>
+Validate that a signed-in user can add a single item to the shopping cart.
+</description>
+<preconditions>
+User is signed-in and has navigated to the random product page.
+</preconditions>
+<postconditions>
+Product is added to the cart, and cart count updates accordingly.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+critical
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Search for the product and navigate to its product page.
+</action>
+<expected_result>
+Product page for the selected item is displayed.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Click the &quot;Add to Cart&quot; button.
+</action>
+<expected_result>
+Product is added to the cart; cart icon updates to reflect the added item.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+29
+</id>
+<title>
+Verify adding products to the cart in different variants and quantities (signed-in user)
+</title>
+<description>
+Validate that a signed-in user can add different products to the cart after changing their details such as size, color, quantity.
+</description>
+<preconditions>
+User is signed-in and has navigated to the random product page.
+</preconditions>
+<postconditions>
+Products are added to the cart in the appropriate variants that the user has selected.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+major
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Search for the product and navigate to its product page.
+</action>
+<expected_result>
+Product page for the selected item is displayed.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Change product size, color and quantity (for example to 15).
+</action>
+<expected_result>
+Product details changed accordingly.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Click the &quot;Add to Cart&quot; button.
+</action>
+<expected_result>
+Product is added to the cart; cart icon updates to reflect the added item.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Search for another product and navigate to its product page.
+</action>
+<expected_result>
+Product page for the selected item is displayed.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+5
+</position>
+<action>
+Change product size, color and quantity (for example to 15).
+</action>
+<expected_result>
+Product details changed accordingly.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+6
+</position>
+<action>
+Click the &quot;Add to Cart&quot; button.
+</action>
+<expected_result>
+Product is added to the cart; cart icon updates to reflect the added item.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+30
+</id>
+<title>
+Verify product quantity change from the cart level (signed-in user)
+</title>
+<description>
+Validate that a signed-in user can change product quantity in the “Shopping Cart” page.
+</description>
+<preconditions>
+User is signed-in and has navigated to the “Shopping Cart” page. There is a clothing product in the cart, e.g. a T-shirt.
+</preconditions>
+<postconditions>
+The product with the changed quantity is in the cart.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+normal
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Change the number of products in the cart, e.g. to 20.
+</action>
+<expected_result>
+Product number changed to 20, price recalculated according to the new quantity.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Change the number of products in the cart to 401.
+</action>
+<expected_result>
+An error message appears “The available purchase order quantity for this product is 400.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+31
+</id>
+<title>
+Verify product size change from the cart level (signed-in user)
+</title>
+<description>
+Validate that a signed-in user can change product size in the “Shopping Cart” page.
+</description>
+<preconditions>
+User is signed-in and has navigated to the “Shopping Cart” page. There is a clothing product in the cart, e.g. a T-shirt.
+</preconditions>
+<postconditions>
+The product with the changed size is in the cart
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+normal
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Change the product size, using drop-down list for the product.
+</action>
+<expected_result>
+Product size has changed.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+32
+</id>
+<title>
+Verify adding a product to wishlist (signed-in user)
+</title>
+<description>
+Ensure that a signed-in user can successfully add a product to their wishlist.
+</description>
+<preconditions>
+User is signed-in and on the product page of an item they want to add to the wishlist.
+</preconditions>
+<postconditions>
+The product is added to the user&#039;s wishlist, which is accessible from their account.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+major
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Navigate to a product page (e.g., &quot;T-shirt&quot;).
+</action>
+<expected_result>
+Product page is displayed with all product information and options, including the &quot;Add to Wishlist&quot; heart-shaped button.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Click the &quot;Add to Wishlist&quot; button.
+</action>
+<expected_result>
+A window appears in which the user can select the list in which he wants to save the product.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Click on “My wishlist”.
+</action>
+<expected_result>
+The list selection window closes. A green toast message &quot;Product Added&quot; appears on the screen.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Go to the &quot;Wishlist&quot; section under the user account.
+</action>
+<expected_result>
+The product appears in the wishlist with an option to view, add to cart, edit or remove it.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+33
+</id>
+<title>
+Verify removing a product from wishlist (signed-in user)
+</title>
+<description>
+Verify that a signed-in user can remove product from wishlist.
+</description>
+<preconditions>
+User is signed-in; they are on the wishlist page with the product added to this list.
+</preconditions>
+<postconditions>
+Product is removed from the wishlist.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+normal
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Click on the button in the shape of trash can in the product preview image.
+</action>
+<expected_result>
+A window appears to confirm the execution of the action &quot;The product will be removed from My wishlist&quot;.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Click “Remove”.
+</action>
+<expected_result>
+A green toast message &quot;Product successfully removed&quot; appears on the screen.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+34
+</id>
+<title>
+Verify filter by single criteria (signed-in user)
+</title>
+<description>
+Verify that applying single filter displays only products that belong to the selected criteria for signed-in user.
+</description>
+<preconditions>
+User is signed-in. Multiple products are available across different categories, and the user is on the product search or category page.
+</preconditions>
+<postconditions>
+The page should display only products in the selected criteria or reset to the default product view if filters are cleared.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+normal
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Select “Clothes” category and then apply a specific filter (e.g., &quot;Men&quot;).
+</action>
+<expected_result>
+The filter is selected, and the page shows a loading spinner or indicator that the filter is being applied. The page automatically reloads and shows clothes only from the “Men” category.  No products from other categories are shown.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+35
+</id>
+<title>
+Verify filter by multiple criteria (signed-in user)
+</title>
+<description>
+Validate that applying multiple filters together narrows down the product search results to meet all selected criteria for signed-in user.
+</description>
+<preconditions>
+User is signed-in. Products are available across different categories and price ranges.
+</preconditions>
+<postconditions>
+The page should display only products that match the applied criteria or reset to the default product view if filters are cleared.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+normal
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Select “Accessories” category and then apply a specific filter (e.g., Composition “Polyester”).
+</action>
+<expected_result>
+The filter is selected, and the page shows a loading spinner or indicator that the filter is being applied. The page automatically reloads and shows Polyester accessories.  No accessories of other composition are shown.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Apply an additional filer e.g., Composition “Recycled cardboard”.
+</action>
+<expected_result>
+The page shows a loading spinner or indicator that the filter is being applied. The page automatically reloads and shows accessories made of polyester and recycled cardboard. No accessories of other composition are shown.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+36
+</id>
+<title>
+Verify checkout process with valid data (signed-in user)
+</title>
+<description>
+Ensure that the checkout process for signed-in user completes successfully with valid user details and payment information.
+</description>
+<preconditions>
+User is signed-in with items in their cart.
+</preconditions>
+<postconditions>
+Order is successfully placed, and an order confirmation page is displayed.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+critical
+</severity>
+<type>
+functional
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Navigate to the cart and click &quot;Proceed to Checkout.&quot;
+</action>
+<expected_result>
+User is taken to the checkout page with a summary of items. Personal information is automatically completed. The &quot;addresses&quot; section opens with first, last name and country fields filled automatically.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Enter valid address information – Address, Zip/Postal Code and City. The remaining fields are optional - they may or may not be filled. Click “Continue”.
+</action>
+<expected_result>
+The address information section closes - an icon with a green tick appears next to it, indicating that the section has been completed correctly. The &quot;Shipping Method&quot; section opens. Two options are available – “Click and Collect” (Pick-up in store) and “My Carrier”.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Select option “Click and Collect” then click “Continue”.
+</action>
+<expected_result>
+The “Shipping Method” section closes - an icon with a green tick appears next to it, indicating that the section has been completed correctly. The &quot;Payment&quot; section opens with three available payment methods: “Pay by bank wire”, “Pay by cash and delivery” and “Pay by check”. There is no option for adding debit/credit card details for signed-in users.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Choose any option, e.g. “Pay by cash and delivery”. Accept Terms &amp; Conditions and click “Place Order”.
+</action>
+<expected_result>
+Order is successfully placed; confirmation page with order details appears.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+</cases>
+</node>
+<node>
+<id>
+7
+</id>
+<title>
+Usability tests
+</title>
+<description>
+
+</description>
+<preconditions>
+
+</preconditions>
+<suites>
+</suites>
+<cases>
+<node>
+<id>
+37
+</id>
+<title>
+Homepage Navigation (Chrome)
+</title>
+<description>
+Ensuring that the homepage is functional, user-friendly, and that all navigation elements (links, menus, banners, etc.) are accessible and lead to the correct destinations in the newest version of Google Chrome. It will also assess the responsiveness and accessibility of the homepage across different screen sizes.
+</description>
+<preconditions>
+* The demo Prestashop site is live and accessible from the browser.
+* The user has appropriate permissions to view and interact with the website.
+* The browser is up-to-date.
+</preconditions>
+<postconditions>
+* The homepage should be fully accessible with no broken links or navigation issues.
+* All pages that are linked from the homepage should function correctly and load with the expected content.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+major
+</severity>
+<type>
+usability
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Navigate to the homepage of the site in the browser.
+</action>
+<expected_result>
+The homepage loads fully, with no errors or broken images. It should display the main menu, featured products, banners, footer, and the search bar.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Click on each category link in the main menu (&quot;Clothes&quot;, &quot;Accessories&quot;, &quot;Art&quot;).
+</action>
+<expected_result>
+Each category should load the correct page with the expected product list or category content. There should be no errors or 404 pages. All links should be functional and redirect to the appropriate pages.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Scroll down to the footer and click on links such as &quot;Contact Us&quot; and &quot;Terms and conditions of use&quot;.
+</action>
+<expected_result>
+Footer links should lead to the correct pages without any broken links. The pages should load promptly and display the appropriate content.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Click on one or more featured products displayed on the homepage.
+</action>
+<expected_result>
+The product detail page should load correctly, showing the relevant product information (e.g., price, description, product details, images, and &quot;Add to Cart&quot; &amp; &quot;Add to Wishlist buttons). There should be no broken images or missing content.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+5
+</position>
+<action>
+Click on any promotional banners or sliders located on the homepage.
+</action>
+<expected_result>
+The linked page should load and display content relevant to the promotion (e.g., discounts, sales pages). The banner should redirect to the correct page without errors.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+6
+</position>
+<action>
+Enter a product name or keyword into the search bar and press &quot;Enter.&quot;
+</action>
+<expected_result>
+The search results should display relevant products or categories based on the search term. If no results are found, a friendly &quot;no results&quot; message should be shown. The results should load without significant delays.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+7
+</position>
+<action>
+Test the homepage on multiple screen sizes (e.g., desktop, tablet, and mobile). This can be done using function in the homepage header or developer tools.
+</action>
+<expected_result>
+The homepage should be responsive, with all elements adjusting to fit the screen size. The navigation, images, and text should be clear, and clickable elements should be appropriately sized for mobile use. No layout or functionality issues should occur.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+38
+</id>
+<title>
+Homepage Navigation (Microsoft Edge)
+</title>
+<description>
+Ensuring that the homepage is functional, user-friendly, and that all navigation elements (links, menus, banners, etc.) are accessible and lead to the correct destinations in the newest version of Microsoft Edge. It will also assess the responsiveness and accessibility of the homepage across different screen sizes.
+</description>
+<preconditions>
+* The demo Prestashop site is live and accessible from the browser.
+* The user has appropriate permissions to view and interact with the website.
+* The browser is up-to-date.
+</preconditions>
+<postconditions>
+* The homepage should be fully accessible with no broken links or navigation issues.
+* All pages that are linked from the homepage should function correctly and load with the expected content.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+major
+</severity>
+<type>
+usability
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Navigate to the homepage of the site in the browser.
+</action>
+<expected_result>
+The homepage loads fully, with no errors or broken images. It should display the main menu, featured products, banners, footer, and the search bar.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Click on each category link in the main menu (&quot;Clothes&quot;, &quot;Accessories&quot;, &quot;Art&quot;).
+</action>
+<expected_result>
+Each category should load the correct page with the expected product list or category content. There should be no errors or 404 pages. All links should be functional and redirect to the appropriate pages.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Scroll down to the footer and click on links such as &quot;Contact Us&quot; and &quot;Terms and conditions of use&quot;.
+</action>
+<expected_result>
+Footer links should lead to the correct pages without any broken links. The pages should load promptly and display the appropriate content.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Click on one or more featured products displayed on the homepage.
+</action>
+<expected_result>
+The product detail page should load correctly, showing the relevant product information (e.g., price, description, product details, images, and &quot;Add to Cart&quot; &amp; &quot;Add to Wishlist buttons). There should be no broken images or missing content.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+5
+</position>
+<action>
+Click on any promotional banners or sliders located on the homepage.
+</action>
+<expected_result>
+The linked page should load and display content relevant to the promotion (e.g., discounts, sales pages). The banner should redirect to the correct page without errors.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+6
+</position>
+<action>
+Enter a product name or keyword into the search bar and press &quot;Enter.&quot;
+</action>
+<expected_result>
+The search results should display relevant products or categories based on the search term. If no results are found, a friendly &quot;no results&quot; message should be shown. The results should load without significant delays.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+7
+</position>
+<action>
+Test the homepage on multiple screen sizes (e.g., desktop, tablet, and mobile). This can be done using function in the homepage header or developer tools.
+</action>
+<expected_result>
+The homepage should be responsive, with all elements adjusting to fit the screen size. The navigation, images, and text should be clear, and clickable elements should be appropriately sized for mobile use. No layout or functionality issues should occur.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+</cases>
+</node>
+<node>
+<id>
+8
+</id>
+<title>
+Performance tests
+</title>
+<description>
+
+</description>
+<preconditions>
+
+</preconditions>
+<suites>
+</suites>
+<cases>
+<node>
+<id>
+40
+</id>
+<title>
+Page Load Time
+</title>
+<description>
+Ensure that the page load time meets the expected performance standards.
+</description>
+<preconditions>
+* Newest version of Google Chrome is installed, network connection is stable.
+
+
+* The demo Prestashop site is live and accessible from the browser.
+* The user has appropriate permissions to view and interact with the website.
+</preconditions>
+<postconditions>
+The page load time has been documented.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+normal
+</severity>
+<type>
+performance
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Open Prestashop homepage.
+</action>
+<expected_result>
+The browser opens the homepage successfully without errors.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Open Developer Tools.
+</action>
+<expected_result>
+Developer Tools window opens with tabs like Network, Performance, Console, etc.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Go to the **Network** tab and reload the page.
+</action>
+<expected_result>
+The page reloads, and network requests are captured in the Network tab.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Monitor the **Load Time** (total time for the page to load). Look at the **Total Duration** at the bottom of the Network tab.
+</action>
+<expected_result>
+The total page load time should be less than **3 seconds**.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+41
+</id>
+<title>
+Time to Interactive (TTI)
+</title>
+<description>
+Measure how quickly the page becomes interactive and usable by the user after loading.
+</description>
+<preconditions>
+* Newest version of Google Chrome is installed, network connection is stable.
+
+
+* The demo Prestashop site is live and accessible from the browser.
+* The user has appropriate permissions to view and interact with the website.
+</preconditions>
+<postconditions>
+TTI measurement has been recorded.
+</postconditions>
+<priority>
+medium
+</priority>
+<severity>
+major
+</severity>
+<type>
+performance
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Open Prestashop homepage in Google Chrome.
+</action>
+<expected_result>
+The homepage is loaded in the browser.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Open Developer Tools.
+</action>
+<expected_result>
+Developer Tools window opens with the Performance tab.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Go to the **Performance** tab.
+</action>
+<expected_result>
+The Performance tab is selected, and recording options are visible.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Click **Record** and reload the page.
+</action>
+<expected_result>
+Recording starts, and the page is reloaded for performance tracking.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+5
+</position>
+<action>
+Wait for the page to load completely, then stop the recording.
+</action>
+<expected_result>
+The recording stops once the page is fully loaded.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+6
+</position>
+<action>
+Look for **Time to Interactive (TTI)** in the summary.
+</action>
+<expected_result>
+TTI is under **5 seconds.**
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+43
+</id>
+<title>
+JavaScript Execution Performance
+</title>
+<description>
+Test the performance impact of JavaScript execution on page loading and responsiveness.
+</description>
+<preconditions>
+* Newest version of Google Chrome is installed, network connection is stable.
+
+
+* The demo Prestashop site is live and accessible from the browser.
+* The user has appropriate permissions to view and interact with the website.
+
+
+* Developer Tools are accessible.
+</preconditions>
+<postconditions>
+JavaScript execution time has been reviewed.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+major
+</severity>
+<type>
+performance
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Open Prestashop homepage in Google Chrome.
+</action>
+<expected_result>
+The homepage loads successfully.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Open Developer Tools.
+</action>
+<expected_result>
+Developer Tools window opens with various tabs.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Go to the **Performance** tab.
+</action>
+<expected_result>
+The Performance tab is selected and ready to record.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Record a page load while monitoring JavaScript execution time.
+</action>
+<expected_result>
+Recording starts, capturing JavaScript execution metrics.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+5
+</position>
+<action>
+Once the recording is complete, review the **JavaScript execution time** (listed under “Scripting”).
+</action>
+<expected_result>
+JavaScript execution should take less than **1 second**.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+45
+</id>
+<title>
+CSS Rendering Performance
+</title>
+<description>
+Measure how quickly the site renders CSS styles after the initial HTML load.
+</description>
+<preconditions>
+* Newest version of Google Chrome is installed, network connection is stable.
+
+
+* The demo Prestashop site is live and accessible from the browser.
+* The user has appropriate permissions to view and interact with the website.
+
+
+* Developer Tools are accessible.
+</preconditions>
+<postconditions>
+CSS rendering performance data documented.
+</postconditions>
+<priority>
+medium
+</priority>
+<severity>
+normal
+</severity>
+<type>
+performance
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Open Prestashop homepage in Google Chrome.
+</action>
+<expected_result>
+Homepage opens in the browser.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Open Developer Tools.
+</action>
+<expected_result>
+Developer Tools open with multiple tabs.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Go to the **Performance** tab.
+</action>
+<expected_result>
+The Performance tab is selected for performance monitoring.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Record the page load while monitoring CSS rendering time.
+</action>
+<expected_result>
+Recording starts, capturing rendering details.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+5
+</position>
+<action>
+Review the **CSS Rendering Time** in the timeline of the performance recording.
+</action>
+<expected_result>
+CSS rendering time should be under **2 seconds** after HTML load.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+46
+</id>
+<title>
+Browser Resource Consumption
+</title>
+<description>
+Test how efficiently the website uses browser resources (e.g., CPU, memory) during typical browsing.
+</description>
+<preconditions>
+* Newest version of Google Chrome is installed, network connection is stable.
+
+
+* The demo Prestashop site is live and accessible from the browser.
+* The user has appropriate permissions to view and interact with the website.
+
+
+* Developer Tools are accessible.
+</preconditions>
+<postconditions>
+Browser resource usage data has been reviewed.
+</postconditions>
+<priority>
+medium
+</priority>
+<severity>
+normal
+</severity>
+<type>
+performance
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Open Prestashop homepage in Google Chrome.
+</action>
+<expected_result>
+The homepage is loaded without errors.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Open Developer Tools and go to Performance tab.
+</action>
+<expected_result>
+The Performance tab opens, ready for recording.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Record the page load and navigate around the site (e.g., add items to the cart, browse categories).
+</action>
+<expected_result>
+Page load and navigation events are captured for resource monitoring.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+4
+</position>
+<action>
+Observe the **CPU and memory usage** during navigation and interactions.
+</action>
+<expected_result>
+CPU and memory usage should remain **under 50%** CPU utilization.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+</cases>
+</node>
+<node>
+<id>
+9
+</id>
+<title>
+Secutiy tests
+</title>
+<description>
+
+</description>
+<preconditions>
+
+</preconditions>
+<suites>
+</suites>
+<cases>
+<node>
+<id>
+48
+</id>
+<title>
+SQL Injection
+</title>
+<description>
+Ensure the application is not vulnerable to SQL injection attacks.
+</description>
+<preconditions>
+* Newest version of Google Chrome is installed, network connection is stable.
+* The demo Prestashop is open in browser.
+* The user has appropriate permissions to view and interact with the website.
+</preconditions>
+<postconditions>
+Any SQL injection vulnerabilities are documented.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+critical
+</severity>
+<type>
+security
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Identify a form or input field (e.g., login form, search bar, contact form).
+</action>
+<expected_result>
+Input field is accessible and functional.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Enter a malicious SQL query into the field (e.g., `&#039;; DROP TABLE users; --`).
+</action>
+<expected_result>
+The application should display an error or handle the input gracefully without breaking or exposing data.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Monitor the application’s behavior (e.g., error messages or unexpected results).
+</action>
+<expected_result>
+No sensitive data is exposed (e.g., &quot;SQL syntax error&quot;) or unauthorized actions performed.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+49
+</id>
+<title>
+Cross-Site Scripting (XSS)
+</title>
+<description>
+Ensure the application is protected against XSS attacks.
+</description>
+<preconditions>
+* Newest version of Google Chrome is installed, network connection is stable.
+* The demo Prestashop is open in browser.
+* The user has appropriate permissions to view and interact with the website.
+</preconditions>
+<postconditions>
+Application handles potentially malicious input securely.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+critical
+</severity>
+<type>
+security
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Identify any input fields or content sections (e.g., order tracking).
+</action>
+<expected_result>
+Input fields are functional.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Input a script tag (e.g., `&lt;script&gt;alert(&#039;XSS&#039;);&lt;/script&gt;`).
+</action>
+<expected_result>
+The input should be sanitized or rejected.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Submit the input and observe the behavior of the page.
+</action>
+<expected_result>
+The script should not execute, and no unauthorized actions (e.g., pop-ups or alerts) should occur.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+50
+</id>
+<title>
+User Authentication Security
+</title>
+<description>
+Verify that user authentication is secure and prevents unauthorized access.
+</description>
+<preconditions>
+* Newest version of Google Chrome is installed, network connection is stable.
+* The demo Prestashop is open in browser.
+* The user has appropriate permissions to view and interact with the website.
+
+
+* User account exists.
+</preconditions>
+<postconditions>
+Authentication mechanisms function securely.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+critical
+</severity>
+<type>
+security
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Log in to Prestashop with valid credentials.
+</action>
+<expected_result>
+Login is successful and redirects to the appropriate user dashboard.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Attempt to log in with incorrect credentials multiple times.
+</action>
+<expected_result>
+Account should lock or display a CAPTCHA after 5 failed attempts.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Observe error messages for failed logins.
+</action>
+<expected_result>
+Generic error message &quot;Authentication failed.&quot; is displayed without revealing specific details.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+51
+</id>
+<title>
+Session Management
+</title>
+<description>
+Test the security of session handling.
+</description>
+<preconditions>
+* Newest version of Google Chrome is installed, network connection is stable.
+* The demo Prestashop is open in browser.
+* The user has appropriate permissions to view and interact with the website.
+* User account exists.
+</preconditions>
+<postconditions>
+Session-related vulnerabilities are identified.
+</postconditions>
+<priority>
+medium
+</priority>
+<severity>
+normal
+</severity>
+<type>
+security
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Log in to the application and perform standard actions.
+</action>
+<expected_result>
+Actions are executed without session issues.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Log out and attempt to use the browser’s back button to access a restricted page.
+</action>
+<expected_result>
+Access is denied or redirected to the login page.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Inspect cookies using browser tools (e.g., Chrome DevTools) and note their attributes (e.g., `Secure`, `HttpOnly`).
+</action>
+<expected_result>
+Cookies are flagged as `Secure` and `HttpOnly`, and sensitive data is not exposed.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+52
+</id>
+<title>
+Sensitive Data Exposure
+</title>
+<description>
+Ensure sensitive information is not exposed in the frontend or network traffic.
+</description>
+<preconditions>
+* Newest version of Google Chrome is installed, network connection is stable.
+* The demo Prestashop is open in browser.
+* The user has appropriate permissions to view and interact with the website.
+</preconditions>
+<postconditions>
+Potential data exposure risks are documented.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+critical
+</severity>
+<type>
+security
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Log in and navigate through the application, performing standard actions (e.g., checkout, viewing user details).
+</action>
+<expected_result>
+Application behaves as expected without exposing sensitive information.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Use DevTools to inspect network requests during actions.
+</action>
+<expected_result>
+Sensitive data (e.g., passwords, payment details) is not visible in plaintext.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Inspect page source and console logs for any sensitive data.
+</action>
+<expected_result>
+No sensitive data is exposed in HTML or JavaScript logs.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+<node>
+<id>
+54
+</id>
+<title>
+Password Security
+</title>
+<description>
+Verify the robustness of password policies.
+</description>
+<preconditions>
+* Newest version of Google Chrome is installed, network connection is stable.
+* The demo Prestashop is open in browser.
+* The user has appropriate permissions to view and interact with the website.
+</preconditions>
+<postconditions>
+Password policies and mechanisms are validated.
+</postconditions>
+<priority>
+high
+</priority>
+<severity>
+major
+</severity>
+<type>
+security
+</type>
+<behavior>
+undefined
+</behavior>
+<automation>
+is-not-automated
+</automation>
+<status>
+actual
+</status>
+<is_flaky>
+no
+</is_flaky>
+<layer>
+unknown
+</layer>
+<milestone>
+
+</milestone>
+<custom_fields>
+</custom_fields>
+<steps_type>
+classic
+</steps_type>
+<steps>
+<node>
+<position>
+1
+</position>
+<action>
+Attempt to register a new account using a weak password (e.g., &quot;12345&quot;).
+</action>
+<expected_result>
+Registration is denied with a message requiring stronger passwords.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+2
+</position>
+<action>
+Attempt to reset a password using the &quot;Forgot Password&quot; feature.
+</action>
+<expected_result>
+A password reset link is sent to the registered email; the password is never exposed.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+<node>
+<position>
+3
+</position>
+<action>
+Inspect password change requests using browser tools to ensure data is transmitted securely.
+</action>
+<expected_result>
+Passwords are never transmitted in plaintext over the network.
+</expected_result>
+<data>
+
+</data>
+<steps>
+</steps>
+</node>
+</steps>
+<tags>
+</tags>
+<params>
+</params>
+<is_muted>
+no
+</is_muted>
+</node>
+</cases>
+</node>
+</suites>
+</nodes>
