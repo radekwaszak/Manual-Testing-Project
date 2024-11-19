@@ -60,26 +60,26 @@ The Prestashop demo website must deliver a seamless, functional, secure, and eff
 
 ### **2\. Performance Requirements**
 
-#### 2.1 Homepage must load fully within 3 seconds under normal internet conditions.  
-#### 2.2 Time to Interactive (TTI) should not exceed 5 seconds.  
-#### 2.3 CSS rendering must complete within 2 seconds after HTML load.  
-#### 2.3 JavaScript execution time must remain below 1 second.  
-#### 2.4 CPU and memory usage should stay under 50% during peak operations.
+* Homepage must load fully within 3 seconds under normal internet conditions.  
+* Time to Interactive (TTI) should not exceed 5 seconds.  
+* CSS rendering must complete within 2 seconds after HTML load.  
+* JavaScript execution time must remain below 1 second.  
+* CPU and memory usage should stay under 50% during peak operations.
 
 ### **3\. Security Requirements**
 
-#### 3.1. Input fields across the platform must be sanitized to prevent SQL Injection and Cross-Site Scripting (XSS) attacks.  
-#### 3.2. User authentication mechanisms must ensure secure password storage and hashing.  
-#### 3.3. Session management must protect against session hijacking or fixation attacks.  
-#### 3.4. Sensitive data (e.g., passwords, card details) must be transmitted over HTTPS.  
-#### 3.5. Password policies must enforce strong passwords and prevent reusing old passwords.
+* Input fields across the platform must be sanitized to prevent SQL Injection and Cross-Site Scripting (XSS) attacks.  
+* User authentication mechanisms must ensure secure password storage and hashing.  
+* Session management must protect against session hijacking or fixation attacks.  
+* Sensitive data (e.g., passwords, card details) must be transmitted over HTTPS.  
+* Password policies must enforce strong passwords and prevent reusing old passwords.
 
 ### **4\. Usability Requirements**
 
-#### 4.1. Navigation: The platform must provide an intuitive user interface, ensuring key sections (e.g., cart, wishlist, search) are easily accessible within three clicks from the homepage.  
-#### 4.2. Error Messages: Validation and error messages must be clear, concise, and context-specific.  
-#### 4.3. Mobile Responsiveness: The platform must be fully responsive and optimized for mobile devices.  
-#### 4.4. JAM integration must support visual test recordings to facilitate usability assessment.
+* Navigation: The platform must provide an intuitive user interface, ensuring key sections (e.g., cart, wishlist, search) are easily accessible within three clicks from the homepage.  
+* Error Messages: Validation and error messages must be clear, concise, and context-specific.  
+* Mobile Responsiveness: The platform must be fully responsive and optimized for mobile devices.  
+* JAM integration must support visual test recordings to facilitate usability assessment.
 
 ### **5\. Additional Requirements**
 
