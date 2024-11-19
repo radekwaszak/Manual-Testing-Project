@@ -20,7 +20,6 @@
 **Expected Result:** The error message should say: "The available purchase order quantity for this product is 400."
 
 **Actual Result:** The error message displayed is: "The available purchase order quantity for this product is 300." This message is shown in the wrong phrasing as per requirements.  
-DevTools Information:
 
 **DevTools Information:**
 
