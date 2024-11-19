@@ -1,14 +1,14 @@
-### **Final Test Report for Prestashop Demo Testing Project**
+# **Final Test Report for Prestashop Demo Testing Project**
 
 ---
 
-#### **1\. Introduction**
+## **1\. Introduction**
 
 The purpose of this document is to summarize the results, findings, and insights gained during the testing of the Prestashop e-commerce demo website ([https://demo.prestashop.com/\#/en/front](https://demo.prestashop.com/#/en/front)). The primary objective was to evaluate the functionality, usability, performance, and security of the system to ensure it meets business requirements and provides a seamless user experience.
 
 ---
 
-#### **2\. Scope of Testing**
+## **2\. Scope of Testing**
 
 The testing scope included the following:
 
@@ -25,7 +25,7 @@ The testing scope included the following:
 
 ---
 
-#### **3\. Summary of Testing Activities**
+## **3\. Summary of Testing Activities**
 
 * **Total Test Cases Executed**: 39  
   * 5 Registration/Sign-in Functional Tests  
@@ -42,9 +42,9 @@ The testing scope included the following:
   * **Usability**: JAM extension for test recordings  
   * **Accessibility and Audit Reports**: Lighthouse
 
-**4\. Test Results**
+## **4\. Test Results**
 
-#### 
+
 
 | Test Type | Total Tests | Passed | Blocked | Failed | Defects Identified |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -56,21 +56,17 @@ The testing scope included the following:
 | Security | 6 | 5 | 0 | 1 | 1 |
 | Total | 39 | 28 | 2 | 9 | 9 |
 
-#### 
 
-#### Percentage test cases executed – 95%
 
-#### Passed Test Cases Percentage – 72%
+Percentage test cases executed – 95%
 
-#### Failed Test Cases Percentage – 23%
+Passed Test Cases Percentage – 72%
 
-**Note**:
+Failed Test Cases Percentage – 23%
 
-A total of **6 test runs** were performed to ensure consistency and to validate test outcomes across multiple attempts. Screenshots from run reports exported from Qase will be included as part of this report for reference.
+---
 
-#### ---
-
-#### **5\. Key Findings**
+## **5\. Key Findings**
 
 1. **Functional Defects**:  
    * **Shopping Cart**: Both signed-in and non-signed-in users encountered issues modifying product sizes from the cart level.  
@@ -84,16 +80,15 @@ A total of **6 test runs** were performed to ensure consistency and to validate 
    * Account locking and CAPTCHA functionality were missing after five failed login attempts, leading to potential brute-force vulnerability.  
    * 
 
-**6\. Test Coverage and Effectiveness**
+## **6\. Test Coverage and Effectiveness**
 
 * **Coverage**: Achieved comprehensive testing across the core functionalities, performance metrics, and security requirements as per business requirements.  
 * **Effectiveness**: Successfully identified 9 critical defects, with focus areas for improvement being performance and security.
 
 ---
 
-#### **7\. Defect Details**
+## **7\. Defect Details**
 
-#### 
 
 | Defect ID | Title | Severity | Priority | Status |
 | :---- | :---- | :---- | :---- | :---- |
@@ -107,16 +102,16 @@ A total of **6 test runs** were performed to ensure consistency and to validate 
 | D-8 | JavaScript execution time exceeds 1 second (2.7 seconds observed) | Normal | Medium | Open |
 | D-9 | Account does not lock or display CAPTCHA after 5 failed login attempts | Critical | High | Open |
 
-#### ---
+---
 
-#### **8\. Test Deliverables**
+## **8\. Test Deliverables**
 
 * Test Cases: Created and managed in Qase.  
 * Defect Reports: Logged in Qase with detailed descriptions, steps to reproduce, and screenshots/recordings.  
 * Performance Reports: Generated using Lighthouse and Chrome DevTools.  
 * Accessibility Reports: Produced using Lighthouse for audit compliance.
 
-**9\. Observations and Recommendations**
+## **9\. Observations and Recommendations**
 
 * **Functional Improvements**: Resolve cart and wishlist issues for non-signed-in users to ensure feature parity with signed-in workflows.  
 * **Performance Optimization**: Optimize JavaScript execution and homepage load times.  
@@ -125,7 +120,7 @@ A total of **6 test runs** were performed to ensure consistency and to validate 
 
 ---
 
-#### **10\. Conclusion**
+## **10\. Conclusion**
 
 The Prestashop demo platform exhibits several critical defects that need immediate attention, especially in the areas of performance and security. While usability and functionality were adequately validated, further rounds of testing are recommended after defect resolution to ensure a production-ready system.
 
