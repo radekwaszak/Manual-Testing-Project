@@ -30,5 +30,3 @@
 * Introduce CAPTCHA \- display a CAPTCHA after a specified number of failed attempts (e.g., 3).  
 * Display Informative Message \- notify the user when the account is locked and provide guidance for unlocking (e.g., contact support or wait 24 hours).  
 * Log Failed Attempts; ensure all failed login attempts are logged for monitoring and security purposes.
-
-**Attachments:**
